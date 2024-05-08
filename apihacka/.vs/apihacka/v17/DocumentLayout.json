@@ -1,0 +1,138 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\garinelenrique\\source\\repos\\apihacka\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2C67C731-50FB-4CF8-B24E-B7A6BD43035B}|apihacka.csproj|c:\\users\\garinelenrique\\source\\repos\\apihacka\\models\\voto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C67C731-50FB-4CF8-B24E-B7A6BD43035B}|apihacka.csproj|solutionrelative:models\\voto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C67C731-50FB-4CF8-B24E-B7A6BD43035B}|apihacka.csproj|c:\\users\\garinelenrique\\source\\repos\\apihacka\\models\\boleta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C67C731-50FB-4CF8-B24E-B7A6BD43035B}|apihacka.csproj|solutionrelative:models\\boleta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C67C731-50FB-4CF8-B24E-B7A6BD43035B}|apihacka.csproj|c:\\users\\garinelenrique\\source\\repos\\apihacka\\models\\votante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C67C731-50FB-4CF8-B24E-B7A6BD43035B}|apihacka.csproj|solutionrelative:models\\votante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C67C731-50FB-4CF8-B24E-B7A6BD43035B}|apihacka.csproj|c:\\users\\garinelenrique\\source\\repos\\apihacka\\models\\resultado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C67C731-50FB-4CF8-B24E-B7A6BD43035B}|apihacka.csproj|solutionrelative:models\\resultado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C67C731-50FB-4CF8-B24E-B7A6BD43035B}|apihacka.csproj|c:\\users\\garinelenrique\\source\\repos\\apihacka\\models\\candidato.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C67C731-50FB-4CF8-B24E-B7A6BD43035B}|apihacka.csproj|solutionrelative:models\\candidato.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C67C731-50FB-4CF8-B24E-B7A6BD43035B}|apihacka.csproj|c:\\users\\garinelenrique\\source\\repos\\apihacka\\apihacka.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{2C67C731-50FB-4CF8-B24E-B7A6BD43035B}|apihacka.csproj|solutionrelative:apihacka.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Resultado.cs",
+              "DocumentMoniker": "C:\\Users\\garinelenrique\\source\\repos\\apihacka\\Models\\Resultado.cs",
+              "RelativeDocumentMoniker": "Models\\Resultado.cs",
+              "ToolTip": "C:\\Users\\garinelenrique\\source\\repos\\apihacka\\Models\\Resultado.cs",
+              "RelativeToolTip": "Models\\Resultado.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T21:34:01.94Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Voto.cs",
+              "DocumentMoniker": "C:\\Users\\garinelenrique\\source\\repos\\apihacka\\Models\\Voto.cs",
+              "RelativeDocumentMoniker": "Models\\Voto.cs",
+              "ToolTip": "C:\\Users\\garinelenrique\\source\\repos\\apihacka\\Models\\Voto.cs",
+              "RelativeToolTip": "Models\\Voto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T21:30:13.015Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Boleta.cs",
+              "DocumentMoniker": "C:\\Users\\garinelenrique\\source\\repos\\apihacka\\Models\\Boleta.cs",
+              "RelativeDocumentMoniker": "Models\\Boleta.cs",
+              "ToolTip": "C:\\Users\\garinelenrique\\source\\repos\\apihacka\\Models\\Boleta.cs",
+              "RelativeToolTip": "Models\\Boleta.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T21:19:28.11Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Candidato.cs",
+              "DocumentMoniker": "C:\\Users\\garinelenrique\\source\\repos\\apihacka\\Models\\Candidato.cs",
+              "RelativeDocumentMoniker": "Models\\Candidato.cs",
+              "ToolTip": "C:\\Users\\garinelenrique\\source\\repos\\apihacka\\Models\\Candidato.cs",
+              "RelativeToolTip": "Models\\Candidato.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T21:16:39.789Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Votante.cs",
+              "DocumentMoniker": "C:\\Users\\garinelenrique\\source\\repos\\apihacka\\Models\\Votante.cs",
+              "RelativeDocumentMoniker": "Models\\Votante.cs",
+              "ToolTip": "C:\\Users\\garinelenrique\\source\\repos\\apihacka\\Models\\Votante.cs",
+              "RelativeToolTip": "Models\\Votante.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T20:57:46.795Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "apihacka",
+              "DocumentMoniker": "C:\\Users\\garinelenrique\\source\\repos\\apihacka\\apihacka.csproj",
+              "RelativeDocumentMoniker": "apihacka.csproj",
+              "ToolTip": "C:\\Users\\garinelenrique\\source\\repos\\apihacka\\apihacka.csproj",
+              "RelativeToolTip": "apihacka.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-08T07:16:07.849Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
