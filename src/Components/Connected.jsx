@@ -1,5 +1,4 @@
 import React from "react";
-import "/Users/garinelenrique/documentos/React-Voting-Application-main/src/App.css"; // Import the CSS file for styling
 
 const App = (props) => {
     return (

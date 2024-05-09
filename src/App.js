@@ -41,7 +41,9 @@ function App() {
         contractAddress, contractAbi, signer
       );
 
-      const tx = await contractInstance.vote(number);
+      let opcion = 0; // TODO
+      let votos = 1; // TODO
+      const tx = await contractInstance.votar(opcion, votos);
       await tx.wait();
       canVote();
   }
@@ -54,7 +56,8 @@ function App() {
       const contractInstance = new ethers.Contract (
         contractAddress, contractAbi, signer
       );
-      const voteStatus = await contractInstance.voters(await signer.getAddress());
+      const votos_posibles = await contractInstance.votos_posibles(await signer.getAddress());
+      const voteStatus = votos_posibles >= 0;
       setCanVote(voteStatus);
 
   }
@@ -67,15 +70,15 @@ function App() {
         contractAddress, contractAbi, signer
       );
 	  console.log(contractInstance);
-      const candidatesList = await contractInstance.getAllVotesOfCandiates();
-      const formattedCandidates = candidatesList.map((candidate, index) => {
-        return {
-          index: index,
-          name: candidate.name,
-          voteCount: candidate.voteCount.toNumber()
-        }
-      });
-      setCandidates(formattedCandidates);
+      let opciones = contractInstance.opciones_disponibles();
+      let votos_actuales = contractInstance.votos_actuales();
+      var candidatos = opciones.map((descripcion, index) => {
+	      return {
+		      index: index,
+		      name: descripcion,
+		      voteCount: votos_actuales[index],
+      }});
+      setCandidates(candidatos);
   }
 
 
@@ -86,7 +89,8 @@ function App() {
       const contractInstance = new ethers.Contract (
         contractAddress, contractAbi, signer
       );
-      const status = await contractInstance.getVotingStatus();
+      const votos_disponibles = await contractInstance.votos_disponibles(await signer.getAddress());
+      const status = votos_disponibles >= 0;
       console.log(status);
       setVotingStatus(status);
   }
@@ -98,7 +102,7 @@ function App() {
       const contractInstance = new ethers.Contract (
         contractAddress, contractAbi, signer
       );
-      const time = await contractInstance.getRemainingTime();
+      const time = await contractInstance.getRemainingTime(); // TODO
       setremainingTime(parseInt(time, 16));
   }
 
