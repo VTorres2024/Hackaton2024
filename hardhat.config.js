@@ -1,4 +1,17 @@
 /** @type import('hardhat/config').HardhatUserConfig */
+require("@nomicfoundation/hardhat-toolbox");
+const dotenv = require("dotenv");
+
+dotenv.config();
+
 module.exports = {
-  solidity: "0.8.24",
+	networks: {
+		sepolia: {
+			url: "https://rpc-sepolia.rockx.com",
+			accounts: [`0x${process.env.PRIVATE_KEY}`],
+			gas: 210000000,
+			gasPrice: 800000000000
+		},
+	},
+	solidity: "0.8.24",
 };

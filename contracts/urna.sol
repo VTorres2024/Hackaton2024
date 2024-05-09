@@ -11,6 +11,10 @@ contract Urna {
 	string[] public opciones;
 	uint[] public votos_opcion;
 
+	error VotoFueraDeTiempo(uint timestamp);
+	error VotosInsuficientes(uint votos_a_emitir, uint votos_posibles, uint votos_emitidos);
+	error OpcionInvalida(uint opcion_invalida);
+
 	constructor(
 		uint inicio,
 		uint fin,
@@ -26,10 +30,17 @@ contract Urna {
 	}
 
 	function votar(uint opcion, uint votos) external payable {
-		require(block.timestamp >= timestamp_inicio, "Voto antes de la fecha de votacion");
-		require(block.timestamp <  timestamp_fin, "Voto despues de la fecha de votacion");
-		require(votos_emitidos[msg.sender] + votos <= votos_posibles(msg.sender), "Votos exceden la cantidad asignada");
-		require(opcion < opciones.length, "Opcion invalida");
+		if (!votacion_abierta())
+			 revert VotoFueraDeTiempo(block.timestamp);
+
+		uint posibles = votos_posibles(msg.sender);
+		uint emitidos = votos_emitidos[msg.sender];
+
+		if (emitidos + votos <= posibles)
+			revert VotosInsuficientes(votos, posibles, emitidos);
+
+		if (opcion < opciones.length)
+			revert OpcionInvalida(opcion);
 
 		votos_emitidos[msg.sender] += votos;
 		votos_opcion[opcion] += votos;
@@ -43,6 +54,26 @@ contract Urna {
 	function votos_posibles(address votante) public view returns (uint)
 	{
 		return contrato_tokens.votos_posibles(votante);
+	}
+
+	function votos_disponibles(address votante) public view returns (uint)
+	{
+		return votos_posibles(votante) - votos_disponibles(votante);
+	}
+
+	function opciones_disponibles() public view returns (string[] memory)
+	{
+		return opciones;
+	}
+
+	function votos_actuales() public view returns (uint[] memory)
+	{
+		return votos_opcion;
+	}
+
+	function votacion_abierta() public view returns (bool)
+	{
+		return timestamp_inicio <= block.timestamp && block.timestamp < timestamp_fin;
 	}
 
 	function ganador() public view returns (uint, bool)
