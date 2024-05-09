@@ -1,6 +1,5 @@
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity ^0.8.4;
-// vim: ts=4
 
 contract VotoCoin 
 {
