@@ -1,5 +1,6 @@
 /** @type import('hardhat/config').HardhatUserConfig */
 require("@nomicfoundation/hardhat-toolbox");
+require("@nomiclabs/hardhat-ethers");
 const dotenv = require("dotenv");
 
 dotenv.config();
@@ -15,3 +16,4 @@ module.exports = {
 	},
 	solidity: "0.8.24",
 };
+

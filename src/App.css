@@ -1,0 +1,161 @@
+/* Login Container */
+.login-container {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #53007e, #7f00be, #0047ab);
+  background-size: 600% 600%;
+  animation: gradientAnimation 4s ease infinite;
+  color: #dedede; /* Adjusted text color */
+  font-family: 'Montserrat', sans-serif; /* Changed font to Montserrat */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Adjusted text shadow */
+}
+
+
+@keyframes gradientAnimation {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Login Title */
+.login-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Login Button */
+.login-button {
+  background-color: #122943;
+  color: #e8bebe;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 0.3rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 2rem;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.login-button:hover {
+  background-color: #113356;
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.login-button:hover {
+  background-color: #113356;
+}
+
+/* Login Input */
+.login-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+  margin-bottom: 10px;
+  width: 200px;
+}
+
+/* Login Error */
+.login-error {
+  color: red;
+  margin-top: 1rem;
+}
+
+/* Welcome Message */
+.welcome-message {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Connected Container */
+.connected-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #f9831c, #d23c55, #c39ba1); /* Modified gradient colors */
+  background-size: 600% 600%;
+  animation: gradientAnimation 4s ease infinite;
+  padding: 2rem;
+  
+}
+
+/* Connected Header */
+.connected-header {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #ffffff; /* Modified header color */
+}
+
+/* Connected Account */
+.connected-account {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #f3f3f3; /* Modified account color */
+}
+
+/* Connected Button */
+.connected-button {
+  background-color: #FF6347; /* Modified button background color */
+  color: #fff;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 0.3rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 2rem;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.connected-button:hover {
+  background-color: #FF4500; /* Modified button hover background color */
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Connected Contract Address */
+.connected-contract-address {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #FF7F50; /* Modified contract address color */
+}
+
+/* Candidates Table */
+.candidates-table {
+  border-collapse: collapse;
+  width: 50%;
+  text-align: center;
+}
+
+.candidates-table th,
+.candidates-table td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.candidates-table th {
+  background-color: #f2f2f2;
+}
+
+/* Number Input */
+input[type=number] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
