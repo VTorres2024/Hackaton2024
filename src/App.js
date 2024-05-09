@@ -49,8 +49,8 @@ function App() {
         
         onClick={requestAccount}
         
-        >Request Account</button>
-        <h3>Wallet Address: {walletAddress}</h3>
+        >Request </button>
+        <h3>Wallet : {walletAddress}</h3>
       </header>
     </div>
   );
