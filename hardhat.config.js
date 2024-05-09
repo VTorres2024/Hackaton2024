@@ -1,6 +1,7 @@
 /** @type import('hardhat/config').HardhatUserConfig */
 require("@nomicfoundation/hardhat-toolbox");
 require("@nomiclabs/hardhat-ethers");
+require("@nomicfoundation/hardhat-ignition-ethers");
 const dotenv = require("dotenv");
 
 dotenv.config();
