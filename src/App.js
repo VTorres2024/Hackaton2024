@@ -66,6 +66,7 @@ function App() {
       const contractInstance = new ethers.Contract (
         contractAddress, contractAbi, signer
       );
+	  console.log(contractInstance);
       const candidatesList = await contractInstance.getAllVotesOfCandiates();
       const formattedCandidates = candidatesList.map((candidate, index) => {
         return {
